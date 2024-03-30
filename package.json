@@ -1,0 +1,26 @@
+{
+  "name": "rabdi_khati",
+  "version": "1.0.0",
+  "description": "Our farm management software, RabdiKhati empowers farmers with comprehensive tools to streamline their operations and maximize productivity. From crop planning and monitoring to financial management and compliance, RabdiKhati offers a complete solution tailored to the needs of modern agriculture. With intuitive features for inventory management, equipment tracking, and precision agriculture, farmers can optimize resource allocation and make data-driven decisions for sustainable farming practices. Stay ahead of the curve with RabdiKhati and take your farm management to the next level",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "farm",
+    "management",
+    "rabdikhati",
+    "khati",
+    "crop",
+    "planting",
+    "harvest",
+    "etc"
+  ],
+  "author": "ManjinderSingh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0"
+  }
+}
