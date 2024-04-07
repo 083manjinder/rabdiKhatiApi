@@ -5,13 +5,13 @@ const PORT = process.env.PORT || 1313;
 const mongoose = require('./dbconnection')
 
 app.use(express.json());
-
-app.get('/', (req, res) => {
-    console.log('d')
-    res.send('Welcome to Farm Management System');
-});
+app.set('port',PORT );
 
 
+
+
+const routes = require('./routes')
+routes(app)
 mongoose.connection.once('open', () => {
     console.log('Mongoose connection established');
      
