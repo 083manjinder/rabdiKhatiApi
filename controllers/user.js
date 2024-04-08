@@ -124,7 +124,6 @@ return res.status(500).json({ data: { message: 'User not exists' } });
         }
       });
   }
-  console.log("userUpdate", userUpdate);
   
   User.findOneAndUpdate(
     { _id: req.params.id }, // Filter condition

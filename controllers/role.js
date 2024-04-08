@@ -32,7 +32,6 @@ exports.getRoles = async function (req, res, next) {
 exports.deleteRole = async function (req, res, next) {
   Role.findOneAndDelete({_id: req.params.id})
     .then(async function (role) {
-      console.log("🚀 ~ role:", role)
       if(!role){
         return  res.status(500).json({ data: { message: "Role not exists" } });
       }
